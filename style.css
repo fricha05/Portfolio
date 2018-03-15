@@ -18,6 +18,24 @@ ul, li{
     blanc : f6f6f6
 */
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.apropos{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+.apropos p{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
 .nav{
 	width: 17vw;
 	height: 100vh;
