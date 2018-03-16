@@ -10,30 +10,21 @@ ul, li{
 	padding: 0;
 }
 
+img{
+    max-width: 100%;
+}
+
 /*  
     rouge : #ee2b47
     gris foncé : #2c2e3e
     gris moins foncé : #34374c
     gris hover: #4d4e55
-    blanc : f6f6f6
+    blanc : #f6f6f6
 */
 
 .container{
     display: flex;
     justify-content: center;
-}
-
-.apropos{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
-}
-
-.apropos p{
-    text-align: center;
-    margin: auto;
-    width: 50%;
 }
 
 .nav{
@@ -52,7 +43,7 @@ ul, li{
     justify-content: center;
 	color: #4d4e55;
     transition: 0.3s;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .nav li{
@@ -72,7 +63,7 @@ ul, li{
 .nav .logo{
     display: flex;
     padding-top: 5vh;
-    padding-bottom: 10vh;
+    padding-bottom: 13vh;
     justify-content: center;
     margin: 0 auto;
     height: 8vw;
@@ -92,5 +83,65 @@ ul, li{
 }
 
 .nav .icons a{
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
+
+.skills{
+    width: 100%;
+}
+
+.apropos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 13vh;
+    margin: auto;
+    width: 50%;
+}
+
+.apropos h1{
+    color : #ee2b47;
+    font-size: 5rem;
+}
+
+.apropos p{
+    font-size: 1.4rem;
+    color: #f6f6f6;
+    text-align: left;
+    margin: auto 2px;
+}
+
+.monCV{
+    color: #f6f6f6;
+    font-family: 'Fira Sans';
+    margin: 20px auto;
+    padding: 13px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 23vh;
+    background-color: #2c2e3e;
+    border: none;
+    transition: 0.4s;
+}
+
+.monCV:hover{
+    background-color: #ee2b47;
+}
+
+.red{
+    color: #ee2b47;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logos img{
+    padding: 20px;
+    width: 10%;
+}
+
