@@ -11,26 +11,12 @@ $(document).ready(function () {
 
 
     $(window).bind('mousewheel', function (e) {
-        $('.nav li a').each(function(){
+        $('.nav li a').each(function () {
             var currLink = window.location.href;
-            var refElement = 'http://127.0.0.1:56865/Rework%20Portfolio/index.html' + $(this).attr("href");
-            if(currLink === refElement){
+            var refElement = 'file:///C:/Users/flori/Documents/Portfolios/Portfolio/Rework%20Portfolio/index.html' + $(this).attr("href");
+            if (currLink === refElement) {
                 $(this).addClass('active');
-            }
-            else{
-                $(this).removeClass('active');
-            }
-        });
-    });
-    
-    $(window).bind('mousewheel', function (e) {
-        $('.nav li a').each(function(){
-            var currLink = window.location.href;
-            var refElement = 'http://127.0.0.1:56865/Rework%20Portfolio/index.html' + $(this).attr("href");
-            if(currLink === refElement){
-                $(this).addClass('active');
-            }
-            else{
+            } else {
                 $(this).removeClass('active');
             }
         });

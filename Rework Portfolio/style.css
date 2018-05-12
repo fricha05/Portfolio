@@ -2,7 +2,7 @@ body{
     margin: 0;
 	padding: 0;
 	font-family: 'Fira Sans';
-    background-color: #34374c;   
+    background-color: #34374c;
 }
 
 ul, li{
@@ -14,7 +14,7 @@ img{
     max-width: 100%;
 }
 
-/*  
+/*
     rouge : #ee2b47
     gris foncé : #2c2e3e
     gris moins foncé : #34374c
@@ -153,4 +153,48 @@ img{
 
 #contacts{
     height: 100vh;
+}
+
+.project_row_1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  margin-top: 0;
+}
+
+.project_row_2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+
+.project_1{
+  background-color: white;
+  width: 30%;
+}
+
+.project_2{
+  background-color: #ee2b47;
+  width: 70%;
+}
+
+.project_3{
+  background-color: blue;
+  width: 70%;
+}
+
+.project_col_1{
+  width: 30%;
+}
+
+.project_4{
+  background-color: green;
+  height: 50%;
+}
+
+.project_5{
+  background-color: yellow;
+  height: 50%;
 }
