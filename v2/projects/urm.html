@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Machine à registres non limités</title>
+        <link rel="stylesheet" type="text/css" href="projets.css">
+        <meta charset="utf-8">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="title">
+            <a href="../index.html"><img src="../logos/returning-arrow.png" alt="" class="arrow"></a>
+            <h1>Machine à registres non limités - URM</h1>
+            <h2>Caml - Paradigme fonctionnel</h2>
+            <hr>
+
+        </div>
+        <div class="intro_pic">
+            <img src="../img/" alt="">
+        </div>
+        <div class="description">
+            <p>Le but de ce projet est de programmer un simulateur pour une
+                machine à registres non limités et de compiler des programmes
+                écrits sur un jeux d’instructions étendus pour pouvoir les
+                exécuter sur ces machines.<br>
+                Une machine à registes non limités (URM : Unlimited Register Machine)
+                est un modèle simplifié et abstrait du fonctionnement des
+                appareils mécaniques de calcul.
+            </p>
+            <p> Ces machines ont une mémoire constituée d’un nombre fini de registres R0, . . . , Rk,
+chaque registre pouvant contenir un entier naturel. S’il n’y a pas de limite supérieure
+aux nombres de registres qu’une URM peut utiliser, la valeur d’un registre non initialisé
+est indéfinie (elle peut donc varier d’une implémentation à une autre). Une URM
+dispose également d’un programme qui est une suite finie constituée de quatre types
+de commandes, et d’un pointeur d’instruction qui indique la prochaine commande du
+programme à exécuter. Une URM s’arrête uniquement si le pointeur d’instruction ne
+pointe pas vers une commande du programme.
+            </p>
+            <p>
+              La machine est programmé en Caml et utilise donc le paradigme fonctionnel
+              dans un interpréteur (Ocaml).
+            </p>
+            <p>Voici un aperçu :</p>
+        </div>
+        <div class="image">
+        <img src="../img/screen_urm.png">
+        </div>
+    </body>
+</html>

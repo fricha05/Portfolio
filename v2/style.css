@@ -39,14 +39,14 @@ img {
 }
 
 .navigation {
-    background-color: #f1f1f1;
+    background-color: #2c2e3e;
     border: 1px solid Gainsboro;
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 1000;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .navigation ul {
@@ -60,7 +60,8 @@ img {
     display: inline-block;
     padding: 10px;
     font-size: 1rem;
-    color: #2c2e3e;
+    font-weight: bold;
+    color: #ee2b47;
 }
 
 .logo {
@@ -92,6 +93,7 @@ img {
     color: #8a8a8a;
     transition: 0.3s;
     font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .nav a.active {
@@ -292,7 +294,7 @@ flex-direction: column;
 
 
 .project_3 {
-    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+    background-image: url(img/screen_wallj.png);
     background-color: rgb(96, 96, 96, 0.2);
     width: 60%;
     height: 50vh;
@@ -301,7 +303,7 @@ flex-direction: column;
 
 .project_4 {
 
-    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+    background-image: url(img/screen_urm.png);
     background-color: rgb(96, 96, 96, 0.2);
     width: 100vw;
     height: 50%;
@@ -313,7 +315,7 @@ flex-direction: column;
 
 .project_5 {
 
-    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+    background-image: url(img/screen_taquin_2.png);
     background-color: rgb(96, 96, 96, 0.2);
     width: 100%;
     height: 50%;
@@ -638,5 +640,3 @@ flex-direction: column;
     .navigation {
         display: none;
     }
-    s
-}
