@@ -1,0 +1,81 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans';
+    background-color: #34374c;
+}
+
+h1 {
+font-size: 4rem;
+text-align: center;
+color: #ee2b47
+}
+
+h2 {
+text-align: center;
+color: white;
+margin-top : -20px;
+}
+
+hr {
+border : #ee2b47 1px solid;
+}
+
+.description {
+color : white;
+width: 60vw;
+margin: 0 auto;
+}
+
+a {
+text-decoration: none;
+color : #ee2b47;
+}
+
+.arrow {
+margin-left: 20px;
+margin-top : 50px;
+}
+
+.image img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+@media (min-width: 720px) and (max-width: 1300px) {
+    .description {
+    width: 70vw;
+    }   
+    
+    .arrow {
+    width: 50px;
+    }
+}
+
+@media (max-width: 719px) {
+    
+    h1 {
+    font-size : 3rem;
+    }
+    .description {
+    width: 75vw;
+    }   
+    
+    .arrow {
+    width: 40px;
+    }    
+    
+}

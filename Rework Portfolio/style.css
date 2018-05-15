@@ -155,8 +155,53 @@ img{
     height: 100vh;
 }
 
+.projet {
+position : relative;
+
+background-size: cover;
+background-position: center;
+transition : 0.4s;
+}
+
+.projet:hover {
+background-color : rgb(96,96,96,0);
+}
+
+.projet:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    content: '';
+
+}
+
+.projet h1 {
+color : #ee2b47;
+}
+
+.projet h2 {
+color : #ee2b47;
+}
+
+.projet a:visited {
+color : #ee2b47;
+}
+
 #projects a{
     text-decoration: none;
+}
+
+.pj1div{
+    width: 30%;
+    height: 100%;
+}
+
+.pj2div{
+    width: 70%;
+    height: 100%;
 }
 
 .project_row_1{
@@ -178,23 +223,29 @@ img{
 }
 
 .project_1{
-  background-color: white;
-  width: 30%;
+background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+background-color : rgb(96,96,96,0.5);
+width: 100%;
+  height: 100%;
 }
 
 .project_2{
-  background-color: #ee2b47;
-  width: 70%;
+background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+background-color : rgb(96,96,96,0.5);
+  height: 100%;
 }
 
 .project_row_1 h1{
     position: relative;
-    top:35%;
+    margin: 0;
+    top:45%;
     font-size: 3rem;
 }
 
 .project_row_1 h2{
     vertical-align: middle;
+    position: relative;
+    top: 15%;
 }
 
 .pj3div{
@@ -205,6 +256,8 @@ img{
 .project_3{
   background-color: cyan;
   height: 100%;
+    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+background-color : rgb(96,96,96,0.5);
 }
 
 .project_3 h1{
@@ -219,16 +272,15 @@ img{
     top:10%;
 }
 
-
-
 .project_col_1{
   width: 35%;
   height: 100%;
 }
 
 .project_4{
-  background-color: green;
   height: 50%;
+    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+background-color : rgb(96,96,96,0.5);
 }
 
 .project_4 h1{
@@ -244,8 +296,9 @@ img{
 }
 
 .project_5{
-    background-color: yellow;
     height: 50%;
+    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+background-color : rgb(96,96,96,0.5);
 }
 
 .project_5 h1{
@@ -258,4 +311,13 @@ img{
 .project_5 h2{
     position: relative;
     top: -15%;
+}
+
+
+@media (max-width: 750px) {
+    .nav {
+    display: none;
+    }
+
+
 }
