@@ -15,6 +15,7 @@
 
 <body>
     <div class="container">
+
         <div class="nav">
             <div class="logo">
                 <p>FR</p>
@@ -35,51 +36,83 @@
                 <a href="mailto:florianrichard96@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
             </div>
         </div>
+
+        <div class="navigation">
+
+            <ul>
+                <img src="../florian/logos/C.png" class="logo" >
+                <a href="#page1" class="active">
+                    <li>Mes projets</li>
+                </a>
+                <a href="#page2">
+                    <li>Mes compétences</li>
+                </a>
+
+                <a href="#page3">
+                    <li>Contact</li>
+                </a>
+
+            </ul>
+
+        </div>
+
         <div id="fullpage">
-           <div class="section" id="projects" data-anchor="page1">
-               <div class="project_row_1">
-                   <div class="pj1div">
-                       <a href="projects/morphing.html">
-                           <div class="project_1 projet">
-                               <h1>Morphing</h1>
-                               <h2>C - Work In Progress</h2>
-                           </div>
-                       </a>
-                   </div>
-                   <div class="pj2div">
-                       <a href="projects/descension.html">
-                           <div class="project_2 projet">
-                               <h1>Descension 1888</h1>
-                               <h2>C# (Unity) - Projet Tuteuré MMI</h2>
-                           </div>
-                       </a>
-                   </div>
-               </div>
-               <div class="project_row_2">
-                   <div class="pj3div projet">
-                       <a href="#">
-                           <div class="project_3 projet">
-                               <h1>Wall-J</h1>
-                               <h2>Java - Work In Progress</h2>
-                           </div>
-                       </a>
-                   </div>
-                 <div class="project_col_1">
-                    <a href="#">
-                         <div class="project_4 projet">
-                            <h1>Projet URM</h1>
-                            <h2>Caml - Paradigme Fonctionnel</h2>
-                         </div>
-                    </a>
-                   <a href="#">
-                       <div class="project_5 projet">
-                               <h1>Taquin</h1>
-                               <h2>C - Jeu Solitaire</h2>
-                       </div>
-                   </a>
-                 </div>
-               </div>
-           </div>
+            <div class="section" id="projects" data-anchor="page1">
+                <div class="projets">
+<a href="projects/morphing.html" class="project_1 projet">
+
+
+                            <h1>Morphing</h1>
+                            <h2>C - Work In Progress</h2>
+
+
+
+    </a>
+
+                        <a href="projects/descension.html" class="project_2 projet">
+
+                            <h1>Descension 1888</h1>
+                            <h2>C# (Unity) - Projet Tuteuré MMI</h2>
+
+                        </a>
+
+
+
+
+                        <a href="projects/wallj.html" class="project_3 projet">
+
+                            <h1>Wall-J</h1>
+                            <h2>Java - Work In Progress</h2>
+
+                        </a>
+
+
+                    <div class="column">
+
+                            <a href="#" class="project_4 projet">
+
+                                <h1>Projet URM</h1>
+                                <h2>Caml - Paradigme Fonctionnel</h2>
+
+                            </a>
+
+
+                            <a href="#" class="project_5 projet">
+
+                                <h1>Taquin</h1>
+                                <h2>C - Jeu Solitaire</h2>
+
+                            </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
             <div class="section" id="skills" data-anchor="page2">
                 <div class="apropos">
                     <h1>À Propos</h1>
@@ -99,10 +132,21 @@
                 </div>
             </div>
             <div class="section" id="contacts" data-anchor="page3">
-                <img src="logos/git.png" alt="">
+                <div class="form">
+                    <h1>
+                        Me contacter ?
+                    </h1>
+                    <form>
+                        <br><input type="text" name="prenom" placeholder="Prénom"><br>
+                        <br><input type="text" name="mail" placeholder="Email"><br>
+                        <br><textarea rows="6" cols="50" placeholder="Message.."></textarea>
+
+                        <button>Envoyer</button>
+                    </form>
+
+                </div>
             </div>
         </div>
-    </div>
 
 </body>
 

@@ -1,16 +1,17 @@
-body{
+body {
     margin: 0;
-	padding: 0;
-	font-family: 'Fira Sans';
+    padding: 0;
+    font-family: 'Fira Sans';
     background-color: #34374c;
 }
 
-ul, li{
-	margin: 0;
-	padding: 0;
+ul,
+li {
+    margin: 0;
+    padding: 0;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -18,53 +19,101 @@ img{
     rouge : #ee2b47
     gris foncé : #2c2e3e
     gris moins foncé : #34374c
-    gris hover: #4d4e55
+    gris hover: #4d4e00
     blanc : #f6f6f6
 */
 
-.container{
+
+
+.container {
     display: flex;
     justify-content: center;
 }
 
-.nav{
-	height: 100vh;
+.navigation li {
+    font-weight: 300;
+    color: black;
+    margin-top: 20px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.navigation {
+    background-color: #f1f1f1;
+    border: 1px solid Gainsboro;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 13%;
+    margin-top: -5px;
+}
+
+.navigation ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    color: #2c2e3e;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 10px;
+    float: left;
+
+
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.nav {
+
+    height: 100vh;
     display: flex;
     flex-direction: column;
-	background-color: #2c2e3e;
+    background-color: #2c2e3e;
     text-align: center;
-    font-weight: bold;
+
 }
 
-.nav a{
-	text-decoration: none;
+.nav a {
+    text-decoration: none;
     display: flex;
     justify-content: center;
-	color: #4d4e55;
+    color: #8a8a8a;
     transition: 0.3s;
     font-size: 1.4rem;
 }
 
-.nav a.active{
+.nav a.active {
     color: #ee2b47;
 }
 
-.nav li{
+.nav li {
     display: flex;
     justify-content: center;
     width: 14vw;
 }
 
-.nav p{
-	color: #ee2b47;
+.nav p {
+    color: #ee2b47;
     font-size: 1.2rem;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: #ee2b47;
 }
 
-.nav .logo{
+.nav .logo {
     display: flex;
     padding-top: 5vh;
     padding-bottom: 13vh;
@@ -74,27 +123,27 @@ img{
     width: 8vw;
 }
 
-.logo p{
+.logo p {
     margin-top: 10%;
     font-size: 5rem;
 }
 
-.nav .icons{
+.nav .icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 20vh;
 }
 
-.nav .icons a{
+.nav .icons a {
     font-size: 2.3rem;
 }
 
-#skills{
+#skills {
     width: 100%;
 }
 
-.apropos{
+.apropos {
     display: flex;
     flex-direction: column;
     padding-top: 13vh;
@@ -103,19 +152,19 @@ img{
     height: auto;
 }
 
-.apropos h1{
-    color : #ee2b47;
+.apropos h1 {
+    color: #ee2b47;
     font-size: 5rem;
 }
 
-.apropos p{
+.apropos p {
     font-size: 1.4rem;
     color: #f6f6f6;
     text-align: left;
     margin: auto 2px;
 }
 
-.monCV{
+.monCV {
     color: #f6f6f6;
     font-family: 'Fira Sans';
     margin: 20px auto;
@@ -129,15 +178,15 @@ img{
     transition: 0.4s;
 }
 
-.monCV:hover{
+.monCV:hover {
     background-color: #ee2b47;
 }
 
-.red{
+.red {
     color: #ee2b47;
 }
 
-.logos{
+.logos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,24 +194,35 @@ img{
     justify-content: center;
 }
 
-.logos img{
+.logos img {
     padding: 20px;
     width: 10%;
 }
 
-#contacts{
+#contacts {
     height: 100vh;
 }
 
+.projets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projets a {
+ display: flex;
+flex-direction: column;
+
+}
+
 .projet {
-position : relative;
-background-size: cover;
-background-position: center;
-transition : 0.4s;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
 }
 
 .projet:hover {
-    background-color : rgb(96,96,96,0);
+    background-color: rgb(96, 96, 96, 0);
 }
 
 .projet:before {
@@ -177,67 +237,27 @@ transition : 0.4s;
 }
 
 .projet h1 {
-color : #ee2b47;
+    color: #ee2b47;
+    text-align: center;
 }
 
 .projet h2 {
-color : #ee2b47;
+    color: #ee2b47;
+    text-align: center;
 }
 
 .projet a:visited {
-color : #ee2b47;
+    color: #ee2b47;
 }
 
-#projects a{
+#projects a {
     text-decoration: none;
 }
 
-.pj1div{
-    width: 30%;
-    height: 100%;
-}
 
-.pj2div{
-    width: 70%;
-    height: 100%;
-}
-
-.project_row_1{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-  margin-top: 0;
-}
-
-.project_row_2{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-  margin-top: 0;
-
-
-}
-
-.project_1{
-background-image: url(img/cochon-d-inde-142839-650-325.jpg);
-background-color : rgb(96,96,96,0.5);
-width: 100%;
-  height: 100%;
-}
-
-.project_2{
-background-image: url(img/ecran_titre.png);
-background-color : rgb(96,96,96,0.5);
-height: 100%;
-}
 
 .projet {
     display: flex;
-    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -245,167 +265,378 @@ height: 100%;
 }
 
 .projet h1 {
-    font-size : 2.5rem;
+    font-size: 2.5rem;
     margin: 0px;
 }
 
 .projet h2 {
-font-size : 1.5rem;
-margin: 0px;
+    font-size: 1.5rem;
+    margin: 0px;
 
 }
 
+.project_1 {
+    background-image: url(img/screen_morphing.png);
+    background-color: rgb(96, 96, 96, 0.2);
+    width: 40%;
+    height: 50vh;
 
-
-
-.pj3div{
-width: 60vw;
-height: 100%;
 }
 
-.project_3{
-background-image: url(img/cochon-d-inde-142839-650-325.jpg);
-background-color : rgb(96,96,96,0.5);
-width: 60vw;
-height: 50vh;
+.project_2 {
+    background-image: url(img/screen1.jpg);
+    background-color: rgb(96, 96, 96, 0.2);
+    width: 60%;
+    height: 50vh;
 }
 
 
-
-
-.project_col_1{
-  width: 35%;
-  height: 100%;
-}
-
-.project_4{
-  height: 50%;
+.project_3 {
     background-image: url(img/cochon-d-inde-142839-650-325.jpg);
-background-color : rgb(96,96,96,0.5);
+    background-color: rgb(96, 96, 96, 0.2);
+    width: 60%;
+    height: 50vh;
 }
 
 
+.project_4 {
 
-
-
-.project_5{
+    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+    background-color: rgb(96, 96, 96, 0.2);
+    width: 100vw;
     height: 50%;
-    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
-background-color : rgb(96,96,96,0.5);
 }
 
 
 
 
-@media (max-width: 750px) {
 
-    .container{
+.project_5 {
+
+    background-image: url(img/cochon-d-inde-142839-650-325.jpg);
+    background-color: rgb(96, 96, 96, 0.2);
+    width: 100%;
+    height: 50%;
+}
+
+.column {
+    width: 40%;
+    display: flex;
     flex-wrap: wrap;
 
-     }
+}
+
+.form h1 {
+    color: #ee2b47;
+    font-size: 2.5rem;
+    padding-top: 25px;
+}
+
+.form {
+    background: #2c2e3e;
+    max-width: 500px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form textarea {
+    width: 100%;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 1rem;
+    margin: 0 0 30px;
+    padding: 15px;
+
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4d4e55;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #ee2b47;
+}
+
+
+@media (max-width: 440px) {
 
 
     .nav {
-    display: none;
+        display: none;
+    }
+    .navigation ul li {
+        font-size: 0.7rem;
     }
 
-    .projet h1{
-    font-size : 1.5rem;
-    }
-
-
-    .projet h2{
-    font-size : 1rem;
-    }
-
-
-    .project_row_1 {
-    display: flex;
-    flex-wrap: wrap;
-    height: 40vh;
-    }
-
-    .pj1div {
-    width: 100vw;
-    height: 20vh;
+    .logo {
+        margin-left: -30px;
 
     }
 
-    .pj2div {
-    width: 100vw;
-    height: 20vh;
+    .projets {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projet h1 {
+        font-size: 1.2rem;
+    }
+
+
+    .projet h2 {
+        font-size: 0.8rem;
     }
 
     .project_1 {
-    width: 100%;
+        width: 100%;
+        height: 15vh;
     }
 
-    .project_row_2 {
-    display: flex;
-    flex-wrap: wrap;
-
+    .project_1 h1 {
+        margin-top: 50px;
     }
 
-    .pj3div {
-    width: 100vw;
-    height: 20vh;
+    .project_2 {
+        width: 100%;
+        height: 15vh;
+    }
 
-    }
-    .project_col_1 {
-    width: 100vw;
-    }
 
     .project_3 {
-    height: 20vh;
-    width: 100vw;
+        width: 100%;
+        height: 15vh;
     }
 
+    .column {
+        flex-direction: row;
+        width: 100%;
+
+    }
     .project_4 {
-    height: 20vh;
+        width: 100%;
+        height: 15vh;
     }
-
 
     .project_5 {
-    height: 20vh;
+        width: 100%;
+        height: 15vh;
     }
+
+
 
     .apropos h1 {
-    font-size : 2rem;
-    margin-top : -15px;
+        font-size: 2rem;
+        margin-top: -15px;
     }
 
-    .apropos  {
+    .apropos {
 
-     width: 80vw;
+        width: 80vw;
     }
 
     .apropos p {
-    font-size : 0.7rem;
-     margin: auto 0px;
+        font-size: 0.7rem;
+        margin: auto 0px;
+    }
+
+    .logos img {
+        padding: 10px;
+        width: 10%;
+    }
+
+    .monCV {
+        font-size: 1rem;
+    }
+
+    .form h1 {
+        font-size: 1.7rem;
+    }
+    .form input {
+
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .form textarea {
+
+        font-size: 0.8rem;
+        padding: 10px;
+
+    }
+    .form button {
+
+        font-size: 0.8rem;
+
+    }
+
+}
+
+
+
+
+
+@media (min-width: 441px) and (max-width: 751px) {
+
+
+
+    .nav {
+        display: none;
+    }
+
+
+
+    .projets {
+        display: flex;
+        flex-direction: row;
+    }
+    .projet h1 {
+        font-size: 1.3rem;
+    }
+
+
+    .projet h2 {
+        font-size: 0.9rem;
+    }
+
+    .project_1 {
+        width: 100%;
+        height: 18vh;
+    }
+
+    .project_1 h1 {
+        margin-top: 50px;
+    }
+
+    .project_2 {
+        width: 100%;
+        height: 18vh;
+    }
+
+
+    .project_3 {
+        width: 100%;
+        height: 18vh;
+    }
+
+    .column {
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .project_4 {
+        width: 100%;
+        height: 18vh;
+    }
+
+    .project_5 {
+        width: 100%;
+        height: 18vh;
+    }
+
+
+
+    .apropos h1 {
+        font-size: 2rem;
+        margin-top: -15px;
+    }
+
+    .apropos {
+
+        width: 80vw;
+    }
+
+    .apropos p {
+        font-size: 0.7rem;
+        margin: auto 0px;
     }
     .monCV {
-    font-size : 1rem;
+        font-size: 1rem;
+    }
+
+    .form h1 {
+        font-size: 1.7rem;
+    }
+    .form input {
+
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .form textarea {
+
+        font-size: 0.8rem;
+        padding: 10px;
+
+    }
+    .form button {
+
+        font-size: 0.8rem;
+
+    }
+
+}
+
+
+
+@media (min-width: 751px) and (max-width: 1400px) {
+
+    .navigation {
+        display: none;
+    }
+    .nav li {
+        width: 20vw;
+    }
+
+    .nav a {
+        font-size: 1.2rem;
+    }
+
+    .apropos {
+
+        width: 60vw;
+    }
+    .apropos p {
+        font-size: 1.2rem;
+        margin: auto 0px;
+    }
+    .monCV {
+        font-size: 1rem;
     }
 }
 
-    @media (min-width: 751px) and (max-width : 1400px) {
-        .nav li {
-        width: 20vw;
-        }
 
-        .nav a {
-        font-size : 1.2rem;
-        }
+@media (min-width: 1401px) {
 
-            .apropos  {
-
-     width: 60vw;
+    .navigation {
+        display: none;
     }
-    .apropos p {
-    font-size : 1rem;
-     margin: auto 0px;
-    }
-    .monCV {
-    font-size : 1rem;
-    }
+    s
 }
